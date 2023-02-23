@@ -2,7 +2,7 @@ matplotlib
 pandas
 numpy
 statistics
-os
+#os
 openpyxl
 datetime
 openpyxl.styles
