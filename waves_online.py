@@ -4,7 +4,7 @@ import numpy as np
 import statistics as stat
 import streamlit as st
 
-st.set_page_config(page_title="Test")
+st.set_page_config(page_title="Wave analysis")
 st.title("Wave analysis")
 st.subheader("Feed me your CSV file")
 st.markdown(
