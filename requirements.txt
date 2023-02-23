@@ -1,0 +1,8 @@
+matplotlib.pyplot
+pandas
+numpy
+statistics
+os
+openpyxl
+datetime
+openpyxl.styles
