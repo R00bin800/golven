@@ -3,6 +3,3 @@ matplotlib
 pandas
 numpy
 statistics
-#os
-openpyxl
-datetime
