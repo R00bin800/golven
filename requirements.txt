@@ -5,4 +5,3 @@ statistics
 #os
 openpyxl
 datetime
-openpyxl.styles
