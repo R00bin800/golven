@@ -57,7 +57,7 @@ if uploaded:
     plt.grid(True, which='both')                                            #show the grid
     plt.plot(x,y,x,z,x,w)                                                   #plot everything for real
     plt.gca().legend(('Highest wave', 'lowest wave', 'combined waves'))      #titles of each graph
-    plt.xticks(steps, label)                                                #show those value of pi
+    plt.xticks(steps, label, rotation = 45)                                                #show those value of pi
     plt.savefig("myplot.png", dpi = 'figure')
     plt.show()
 
