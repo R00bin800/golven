@@ -10,7 +10,9 @@ st.subheader("Feed me your XLSX file")
 st.markdown(
 "Please make sure input data is structured as follows:  \n"
 "Row 1(wave height): 1, 2, 3, 6, 3, 5  \n"
-"Row 2(wave period): 3, 2, 9, 16, 2, 5"
+"Row 2(wave period): 3, 2, 9, 16, 2, 5  \n"
+"  \n"
+"Due to some weird error I'm not willing to fix, please keep amount of waves below 8500"
 )
 
 uploaded = st.file_uploader("Choose an xlsx file", type="xlsx")
