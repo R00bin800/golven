@@ -6,16 +6,18 @@ import streamlit as st
 
 st.set_page_config(page_title="Wave analysis")
 st.title("Wave analysis")
-st.subheader("Feed me your CSV file")
+st.subheader("Feed me your XLSX file")
 st.markdown(
 "Please make sure input data is structured as follows:  \n"
 "Row 1(wave height): 1, 2, 3, 6, 3, 5  \n"
 "Row 2(wave period): 3, 2, 9, 16, 2, 5"
 )
 
-uploaded = st.file_uploader("Choose a csv file", type="csv")
+uploaded = st.file_uploader("Choose an xlsx file", type="xlsx")
 if uploaded:
-    df = pd.read_csv(uploaded, header=None, sep=", ", engine='python').transpose()
+    df = pd.read_excel(uploaded, header=None)
+    df =df[0].str.split(', ', expand=True)
+    df = df.transpose().astype(float)
     df.columns = ["Golfhoogte", "Golfperiode"]
     g_hoogte_list = df["Golfhoogte"].tolist()
     g_periode_list = df["Golfperiode"].tolist()
