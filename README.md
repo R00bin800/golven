@@ -12,7 +12,7 @@ pages
 |wave analyzer
 
 This is because the app used to make te site, looks for this file structure in order te make the different pages within the site.  
-'  
+  
 
 The requirements.txt is used to let the site know which dependencies to download in order to make te program work.
 
