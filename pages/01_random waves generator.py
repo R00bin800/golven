@@ -7,7 +7,7 @@ st.set_page_config(page_title="Random wave generator")
 st.title("Random wave generator")
 st.subheader("Generate some random waves and download it!")
 st.markdown(
-"This generator is compatible with my wave analysis site."
+"This generator is compatible with my wave analysis site.  \n"
 "Due to some weird error I'm not willing to fix, please keep amount of waves below 8500"
 )
 st.sidebar.markdown("# Wave generator")
