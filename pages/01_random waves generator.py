@@ -8,7 +8,7 @@ st.title("Random wave generator")
 st.subheader("Generate some random waves and download it!")
 st.markdown(
 "This generator is compatible with my wave analysis site.  \n"
-"Due to some weird error I'm not willing to fix, please keep amount of waves below 8500"
+"Due to some weird error I'm not willing to fix, please keep the values reasonable, the program breaks when making all numbers to big."
 )
 st.sidebar.markdown("# Wave generator")
 

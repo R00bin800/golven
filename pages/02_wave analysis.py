@@ -12,7 +12,7 @@ st.markdown(
 "Row 1(wave height): 1, 2, 3, 6, 3, 5  \n"
 "Row 2(wave period): 3, 2, 9, 16, 2, 5  \n"
 "  \n"
-"Due to some weird error I'm not willing to fix, please keep amount of waves below 8500"
+"Due to some weird error I'm not willing to fix, please keep the values reasonable, the program breaks when making all numbers to big."
 )
 st.sidebar.markdown("# Wave analyzer")
 
