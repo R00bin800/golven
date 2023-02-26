@@ -21,7 +21,7 @@ min_height = st.number_input("minimum wave height",min_value=1,max_value=49)
 max_height = st.number_input("maxiumum wave height",min_value=min_height, max_value=50)
 
 min_period = st.number_input("minimum wave period",min_value=1,max_value=49)
-max_period = st.number_input("maxiumum wave period",min_value=min_period, max_value=50)
+max_period = st.number_input("maxiumum wave period",min_value=min_period, max_value=120)
 
 if min_height and max_height and min_period and max_period:
     for i in range(amount):
