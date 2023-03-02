@@ -27,7 +27,7 @@ if uploaded:
     height_average = np.mean(g_hoogte_list)                      #get the average height from the hoogte list
     period_average = np.mean(g_periode_list)                     #get the average period from the periode list
 
-    Hs_list = [i for i in g_hoogte_list if i >= np.percentile(g_hoogte_list, 66.666667)]
+    Hs_list = [i for i in g_hoogte_list if i > np.percentile(g_hoogte_list, 66.666667)]
     Hs = np.mean(Hs_list)                                        #get the average height from the Hs_list, this is the significant wave height
 
     index = [i for i, j in enumerate(g_hoogte_list) if j in Hs_list]          #get the location of the significant waves in the orignial wave list.
